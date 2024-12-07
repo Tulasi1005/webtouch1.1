@@ -1,0 +1,134 @@
+
+
+.oakslider {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #22273C;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  .oakslider__ui {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    min-width: 60%;
+    margin: 0 auto;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .oakslider__ui .oakslider__controls {
+    display: flex;
+  }
+  .oakslider__ui .oakslider__arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    opacity: 0.5;
+    background: #fff;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  .oakslider__navpoint {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  .oakslider__navpoint:first-of-type .oakslider__timer {
+    width: 95px;
+  }
+  .oakslider__navpoint:first-of-type .oakslider__label {
+    opacity: 1;
+  }
+  .oakslider__navpoint .oakslider__label {
+    opacity: 0;
+    font-weight: 400;
+  }
+  .oakslider__navpoint .oakslider__timer {
+    position: relative;
+    width: 55px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
+    overflow: hidden;
+  }
+  .oakslider__navpoint .oakslider__timer .timer__progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 1px;
+    width: 100%;
+    transform: translateX(-100%);
+  }
+  
+  .oakslider__slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .oakslider__slide.slide--active {
+    display: block;
+  }
+  
+  .slide__image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .slide__image img {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+  
+  .slide__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide__content {
+    padding-top: 100px;
+    max-width: 1200px;
+    min-width: 60%;
+    font-family: sans-serif;
+  }
+  
+  .slide__title {
+    font-size: 35px;
+    max-width: 650px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  
+  .slide__link {
+    margin-top: 25px;
+  }
